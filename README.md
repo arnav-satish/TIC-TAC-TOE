@@ -78,13 +78,17 @@ Once both players are connected, the game will begin, and you will see the Tic T
 
 ## How It Works
 
+![image](https://github.com/user-attachments/assets/b3df774e-fa36-4264-86df-2bca438a5ef4)
+
 ### Server Code Overview
 
 - **Socket Initialization:**  
   The server creates a socket, binds to port `9999` (or another specified port), and listens for two incoming connections.
+  ![image](https://github.com/user-attachments/assets/f03211a7-642a-4461-8a12-56ceedcdc2c3)
 
 - **Player Connection:**  
   It accepts two player connections, assigns each a player number (Player 1 or Player 2), and notifies them.
+  ![image](https://github.com/user-attachments/assets/29619e45-448a-41dd-8a96-ce8c8b344dfb)
 
 - **Game Logic:**  
   The server maintains a 3x3 game matrix. It alternates between players by prompting for moves using a basic communication protocol (sending messages like `"Input"`, `"Matrix"`, and `"Over"`).
